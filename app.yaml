@@ -1,2 +1,2 @@
 runtime: python37
-endpoint: gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app
+endpoint: gunicorn -w 1 -k uvicorn.workers.UvicornWorker appBenchmarkApi:main
