@@ -73,4 +73,4 @@ async def upload_pdf(file: UploadFile = File(...)):
 
 
 import uvicorn
-uvicorn.run(main, host="0.0.0.0", port=8000)
+##uvicorn.run(main, host="0.0.0.0", port=8000)
