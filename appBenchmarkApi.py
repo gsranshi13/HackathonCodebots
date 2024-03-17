@@ -1,6 +1,6 @@
 from fastapi import FastAPI,Query
 main = FastAPI()
-from pojos import EsgResponse,BenchmarkDetail,Metrics,HealthCheckStatus
+from RequestResponsePojo import EsgResponse,BenchmarkDetail,Metrics,HealthCheckStatus
 from fastapi import FastAPI, File, UploadFile
 
 
