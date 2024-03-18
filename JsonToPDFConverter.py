@@ -1,12 +1,9 @@
 from fpdf import FPDF
 import json
 from google.cloud import storage
-import os
 import locale
 
 from RequestResponsePojo import EsgResponse, BenchmarkDetail, Metrics, HealthCheckStatus,PdfOutput,Root
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/gurpreetsingh/Downloads/guru-benchmark-4cfaf5e8357e.json"
 
 
 def generate_pdf(data: Root, entityName):
