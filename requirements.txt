@@ -23,4 +23,5 @@ google.cloud
 fpdf
 streamlit
 langchain_community
+langchain
 
