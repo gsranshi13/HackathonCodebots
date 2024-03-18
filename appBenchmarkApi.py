@@ -13,7 +13,7 @@ from Utility import create_langchain_index1, create_langchain_index2, get_respon
 import requests
 from io import BytesIO
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/gurpreetsingh/Downloads/guru-benchmark-4cfaf5e8357e.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"guru-benchmark-4cfaf5e8357e.json"
 
 
 
