@@ -1,5 +1,5 @@
 import chromadb
-
+import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"guru-benchmark-4cfaf5e8357e.json"
 
 client = chromadb.PersistentClient(path="/tmp/data")
