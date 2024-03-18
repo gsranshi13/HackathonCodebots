@@ -8,13 +8,9 @@ main = FastAPI()
 from RequestResponsePojo import EsgResponse, BenchmarkDetail, Metrics, HealthCheckStatus,PdfOutput,Root
 from fastapi import FastAPI, File, UploadFile
 from google.cloud import storage
-import os
 from Utility import create_langchain_index1, create_langchain_index2, get_response, ask_question
 import requests
 from io import BytesIO
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"guru-benchmark-4cfaf5e8357e.json"
-
 
 
 def abc(entityName: str, filePath):
