@@ -1,4 +1,3 @@
-import streamlit as st
 from langchain_community.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain_community.vectorstores import DocArrayInMemorySearch
