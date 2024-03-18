@@ -21,4 +21,5 @@ spacy
 google-cloud-storage
 google.cloud
 fpdf
+streamlit
 
