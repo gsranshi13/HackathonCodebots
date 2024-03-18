@@ -3,9 +3,6 @@ import logging
 from vertexai.language_models import TextGenerationModel
 
 from sentimentAnalysis import sentiment_analysis
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/gurpreetsingh/Downloads/guru-benchmark-4cfaf5e8357e.json"
-
 
 class SendToLlm:
     def runLLM(self, query, similarity_results):
