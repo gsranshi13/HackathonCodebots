@@ -1,9 +1,5 @@
 from vertexai.language_models import TextGenerationModel
 
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/gurpreetsingh/Downloads/guru-benchmark-4cfaf5e8357e.json"
-
-
 parameters = {
     "candidate_count": 1,
     "max_output_tokens": 1,
