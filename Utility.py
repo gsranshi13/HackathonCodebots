@@ -64,7 +64,7 @@ def chunk_data_with_page_and_id1(input_file, chunk_size, overlap):
     print(input_file)
     pdf_reader = PyPDF2.PdfReader(input_file)
 
-    with open("temp.txt", "w", encoding='utf-8') as file:
+    with open("/tmp/temp.txt", "w", encoding='utf-8') as file:
         for page_number in range(len(pdf_reader.pages)):
             page = pdf_reader.pages[page_number]
             file.write(page.extract_text() + "\n")
@@ -106,7 +106,7 @@ def create_langchain_index2(input_file):
 def create_langchain_index1(input_file):
     print("--indexing---")
     chunk = chunk_data_with_page_and_id1(input_file, 1000, 100)
-    loader = TextLoader("temp.txt", encoding='utf-8')
+    loader = TextLoader("/tmp/temp.txt", encoding='utf-8')
     print(embeddings)
 
     index = VectorstoreIndexCreator(vectorstore_cls=DocArrayInMemorySearch, embedding=embeddings).from_loaders([loader])
