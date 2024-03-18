@@ -4,6 +4,10 @@ from dataclasses import dataclass
 import json
 
 @dataclass
+class PdfOutput:
+    pdfUrlPath :str
+
+@dataclass
 class HealthCheckStatus:
     status: str
     message: str
