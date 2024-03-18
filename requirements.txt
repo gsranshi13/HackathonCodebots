@@ -16,3 +16,6 @@ websockets
 wrapt			
 uvloop
 python-multipart
+chromadb
+spacy
+nlp = spacy.load('en_core_web_md')
