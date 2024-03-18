@@ -24,4 +24,5 @@ fpdf
 streamlit
 langchain_community
 langchain
+langchain_google_vertexai
 
