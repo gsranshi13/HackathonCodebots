@@ -34,8 +34,6 @@
 
 
 from vertexai.language_models import TextEmbeddingModel
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"/Users/gurpreetsingh/Downloads/guru-benchmark-4cfaf5e8357e.json"
 
 
 def text_embedding(text) -> list:
